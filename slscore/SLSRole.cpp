@@ -353,7 +353,7 @@ void CSLSRole::check_hls_file()
     
     // Initialize the M3U8 playlist file if it doesn't exist yet
     if (0 == m_record_hls_vod_fd) {
-        sprintf(m_record_hls_vod_filename, "%s/playlist.m3u8", m_record_hls_path);
+        sprintf(m_record_hls_vod_filename, "%s/%s-video.m3u8", m_record_hls_path, get_streamid());
         
         // Create the playlist file
         m_record_hls_vod_fd = ::open(m_record_hls_vod_filename, O_WRONLY|O_CREAT|O_TRUNC, 
