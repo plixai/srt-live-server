@@ -137,6 +137,7 @@ protected:
     char          m_record_hls_ts_filename[URL_MAX_LEN];
     int           m_record_hls_vod_fd ;
     char          m_record_hls_vod_filename[URL_MAX_LEN];
+    int           m_record_hls_segment_count;
     char          m_record_hls_path[URL_MAX_LEN];
     int64_t       m_record_hls_begin_tm_ms ;
     int           m_record_hls_segment_duration;
